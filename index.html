@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cole Hartman</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body id="home">
+
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg p-0 sticky-top d-flex justify-content-around" id="navbar">
+        <div class="container mx-1 pt-1 pb-1">
+          <a class="navbar-brand" href="#home">CH</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#aboutmescroll">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education-scroll">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Links
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/cole-hartman-293683224/" target="_blank" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                  </svg> Linkedin</a></li>
+                  <li><a class="dropdown-item" href="https://github.com/Cole-Hartman" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                  </svg> GitHub</a></li>
+                  <li><a class="dropdown-item" href="#contact">Contact</a></li> 
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav> 
+
+
+    <!-- Dark Mode -->
+    <script>
+      // Function to set theme colors
+      function setThemeColors() {
+        var navbar = document.getElementById("navbar");
+        if (document.body.dataset.bsTheme === "dark") {
+          document.body.style.backgroundColor = "#212529"; 
+          navbar.style.backgroundColor = "#212529"; 
+          navbar.style.color = "white"; 
+        } else {
+          document.body.style.backgroundColor = "white"; 
+          navbar.style.backgroundColor = "white"; 
+          navbar.style.color = "#212529"; 
+        }
+      }
+    
+      document.addEventListener("DOMContentLoaded", function() {
+        document.body.dataset.bsTheme = "dark"; 
+        setThemeColors(); 
+      });
+    
+      function toggleTheme() {
+        var currentTheme = document.body.dataset.bsTheme;
+        document.body.dataset.bsTheme = (currentTheme === "dark") ? "light" : "dark";
+        setThemeColors(); 
+      }
+    </script>
+
+    <div class="container-fluid dark-mode-container">
+      <div class="row dark-mode-row">
+        <!-- Column for the switch -->
+        <div class="col-1 pe-0 form-check form-switch d-flex justify-content-end align-items-center">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked onclick="toggleTheme()">
+          <label class="form-check-label ps-1" for="flexSwitchCheckChecked"></label>
+        </div>
+        <!-- Column for the moon icon -->
+        <div class="col-1 ps-1 pe-0 d-flex justify-content-start align-items-center moon-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon me-2" viewBox="0 0 16 16">
+            <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+          </svg>
+        </div>
+      </div>
+    </div> 
+
+    <!-- Landing Page -->
+    <div class="container-fluid landing-container">
+      <div class="row w-100 title-row" data-aos="fade-down" data-aos-delay="250" data-aos-duration="1500">
+        <div class="col-lg-8 col-12 text-column">
+          <h1>COLE HARTMAN</h1>
+          <p>コール・ハートマン</p>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <img src="images/FloatingHead.png " alt="" class="floating-head ps-0">
+        </div>
+      </div>
+      <!-- Text Animation -->
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <div class="row d-flex justify-content-center typing-text-row" id="aboutmescroll">
+        <div class="col typing-text-col">
+            <h1>I am a <span class="auto-type text-primary"></span></h1>
+        </div>
+      </div>
+      <script>
+        var typed = new Typed(".auto-type",{
+          strings : ["Engineer", "Programmer", "Student", "Designer"],
+          typeSpeed : 150,
+          backSpeed : 150,
+          loop : true
+        })
+      </script>
+    </div>
+
+    <!-- About Me -->
+    <div class="container" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" id="aboutme">
+        <div class="row mb-2 gx-5 aboutme-title-row">
+          <div class="col">
+            <h4>About Me</h4>
+          </div>
+          <div class="col">
+            <h4>Languages</h4>
+          </div>
+        </div>
+        <div class="row gx-5 aboutme-content-row">
+          <div class="col">
+            <p>Hello everyone, I'm Cole! Based in Long Beach, CA, I have a passion for the dynamic world of Full-Stack Development and Artificial Intelligence. Along my journey I am dedicated to improving my craft and inspiring the next generation of innovators.</p>
+          </div>
+          <div class="col skills-col d-flex align-items-baseline">
+            <ul class="list-unstyled">
+                <li class="d-flex align-items-center mb-1" id="skills-list">
+                    <p class="me-2 mb-0">Python</p>
+                </li>
+                <li class="d-flex align-items-center mb-1" id="skills-list">
+                  <p class="me-3 mb-0">HTML</p>
+                </li>
+                <li class="d-flex align-items-center mb-1" id="skills-list">
+                  <p class="me-4 mb-0">CSS</p>
+              </li>
+                <li class="d-flex align-items-center mb-1" id="skills-list">
+                    <p class="me-5 mb-0">C</p>
+                </li> 
+                <li class="d-flex align-items-center mb-1" id="skills-list">
+                  <p class="me-5 mb-0">JS</p>
+              </li>
+            </ul>
+
+            <ul class="list-unstyled w-100">
+              <li class="d-flex align-items-center mb-2 py-2">
+                  <div class="progress flex-grow-1" style="height: 8px;">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+              </li>
+              <li class="d-flex align-items-center mb-2 py-2">
+                <div class="progress flex-grow-1" style="height: 8px;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </li>
+              <li class="d-flex align-items-center mb-2 py-2">
+                <div class="progress flex-grow-1" style="height: 8px;">
+                    <div class="progress-bar" role="progressbar" style="width: 86%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </li>
+              <li class="d-flex align-items-center mb-2 py-2">
+                  <div class="progress flex-grow-1" style="height: 8px;">
+                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+              </li> 
+              <li class="d-flex align-items-center mb-2 py-2">
+                <div class="progress flex-grow-1" style="height: 8px;">
+                    <div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </li> 
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container education-scroll-custom border" id="education-scroll"></div>
+    <!-- Education -->
+    <div class="container-fluid" id="education">
+      <div class="row d-flex justify-content-center">
+        <div class="col d-flex justify-content-center" data-aos="fade-right" data-aos-delay="250" data-aos-duration="1500" id="education-col">
+          <div class="card">
+            <div class="card-header border">Education</div>
+            <div class="card-body">
+              <h5 class="card-title">California State University, Long Beach</h5>
+              <ul>
+                <li>Major: Computer Science</li>
+                <li>Concentration: Software Dev</li>
+                <li>GPA: 3.9</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center" data-aos="fade-left" data-aos-delay="250" data-aos-duration="1500" id="logo-col">
+          <img src="images/CSULB.png" alt="California State University Long Beach Logo" class="long-beach-logo">
+        </div>
+      </div>
+    </div>
+      
+    <!-- Contact -->
+    <div class="container-fluid" id="contact" data-aos="fade-up" data-aos-delay="250" data-aos-duration="1500">
+      <div class="row d-flex justify-content-center">
+        <h2 class="text-center">Contact Me</h2>
+      </div>
+      <div class="row" id="row-icon">
+        <div class="col">
+          <div class="col contact-li">
+            <a href="https://www.linkedin.com/in/cole-hartman-293683224/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="col contact-git">
+            <a href="https://github.com/Cole-Hartman?tab=repositories" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="col contact-email">
+          <a href="mailto:colehartman820@gmail.com">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

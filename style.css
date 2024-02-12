@@ -1,0 +1,222 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dark Mode Button */
+.moon-icon {
+    width: 45px;
+}
+
+.dark-mode-row {
+    position: relative;
+    left: 9.5%;
+}
+
+@media (max-width: 1626px) {
+    .dark-mode-row {
+        position: relative;
+        left: 4%; 
+    
+    }
+}
+
+@media (max-width: 992px) {
+    .dark-mode-row {
+        position: relative;
+        left: 10.5%; 
+    
+    }
+}
+
+@media (max-width: 709px) {
+    .dark-mode-row {
+        position: relative;
+        left: 10.5%; 
+    
+    }
+}
+
+@media (max-width: 607px) {
+    .dark-mode-row {
+        position: relative;
+        left: 5%; 
+    
+    }
+}
+
+@media (max-width: 571px) {
+    .dark-mode-row {
+        position: relative;
+        left: 1%; 
+    
+    }
+}
+
+/* Landing Page */
+.landing-container {
+    height: 100vh;
+}
+
+.floating-head {
+    width: 250px;
+    padding-left: 20%;
+}
+
+.title-row {
+    font-size: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+    top: 25%;
+    left: 1%
+}
+
+.text-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid black;
+}
+
+@media (max-width: 1050px) {
+    .title-row{
+        position: relative;
+        top: 20%;
+    }
+    .floating-head{
+        width: 150px ;
+    }
+  }
+
+/* Text Animation */
+.typing-text-row {
+    font-family: 'Libre Barcode 39 Text', system-ui;
+    top: 30%;
+    position: relative;
+}
+
+.typing-text-col{
+    display: flex;
+    justify-content: center;
+}
+  
+/* About Me */
+.aboutme-title-row h4 {
+    text-decoration: underline;
+}
+
+#aboutme {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 325px; 
+    font-size: large;
+}
+
+@media (max-width: 570px) {
+    #aboutme {
+        font-size: small;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    #skills-list {
+        margin-bottom: 20% !important;
+    }
+  }
+
+/* Education */
+.education-scroll-custom {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.long-beach-logo {
+    width: 300px;
+}
+
+#education {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 320px;
+    margin-bottom: 325px; 
+    font-size: large;
+}
+
+@media (max-width: 767px) {
+    #education {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 325px; 
+        font-size: small;
+    }
+    .long-beach-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+  }
+
+  @media (max-width: 607px) {
+    #education {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 325px; 
+        font-size: small;
+    }
+    .long-beach-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+  }
+
+  #education-col{
+    border-right: 3px solid black;
+  }
+
+  #logo-col {
+    border-left: 3px solid black;
+  }
+
+  @media (max-width: 549px) {
+    #education-col {
+        border: none;
+    }
+    #logo-col{
+        border: none;
+    }
+
+  }
+
+/* Contact */
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 125px; 
+    font-size: large;
+}
+
+#row-icon {
+    width: 20%;
+}
+
+@media (max-width: 825px) {
+    #row-icon {
+        width: 40%;
+    }
+  }
+
+@media (max-width: 477px) {
+#row-icon {
+    width: 80%;
+}
+}

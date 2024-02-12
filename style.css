@@ -73,6 +73,16 @@ body {
     left: 1%
 }
 
+@media (max-width: 390px) {
+    .text-column h1{
+        padding-right: 30px;
+    }
+    .text-column p {
+        font-size: medium;
+        padding-right: 20px;
+    }
+  }
+
 .text-column {
     display: flex;
     flex-direction: column;
@@ -93,7 +103,7 @@ body {
 
 /* Text Animation */
 .typing-text-row {
-    font-family: 'Libre Barcode 39 Text', system-ui;
+    font-family: 'Raleway', sans-serif;
     top: 30%;
     position: relative;
 }
@@ -132,7 +142,17 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+    border: 1px solid #42494F;
 }
+
+@media (max-width: 570px) {
+    .education-scroll-custom {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        border: 0px;
+    }
+  }
 
 .long-beach-logo {
     width: 300px;

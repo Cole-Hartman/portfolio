@@ -73,16 +73,24 @@ body {
     left: 1%
 }
 
-@media (max-width: 405px) {
-    .text-column h1{
+@media (max-width: 403px) {
+    .title-row {
+        padding-left: 90px;
+        
+    }
+    .floating {
+        padding-left: 0;
         padding-right: 50px;
+        padding-top: 20px;
+    }
+    .text-column h1{
+        padding-right: 40px;
     }
     .text-column p {
         font-size: medium;
         padding-right: 20px;
     }
   }
-
 
 .text-column {
     display: flex;

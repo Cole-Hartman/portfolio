@@ -103,7 +103,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-left: 3px solid black;
+    border-left: 3px solid #42494F;;
 }
 
 @media (max-width: 1050px) {
@@ -146,11 +146,16 @@ body {
         padding-left: 10%;
         padding-right: 10%;
     }
-
-    #skills-list {
-        margin-bottom: 20% !important;
-    }
   }
+
+  .skill-languages .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+}
+
 
 /* Education */
 .education-scroll-custom {
@@ -212,11 +217,11 @@ body {
   }
 
   #education-col{
-    border-right: 3px solid black;
+    border-right: 1.5px solid #42494F;
   }
 
   #logo-col {
-    border-left: 3px solid black;
+    border-left: 1.5px solid #42494F;
   }
 
   @media (max-width: 549px) {
@@ -228,6 +233,9 @@ body {
     }
 
   }
+
+  /* Featured Projects */
+
 
 /* Contact */
   #contact {

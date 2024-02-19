@@ -67,11 +67,10 @@ body {
 
 @media (max-width: 450px) {
     .landing-container {
-        height:70vh;
-       margin-bottom: 30vh;
+        height:60vh;
+        margin-bottom: 40vh;
     }
 }
-
 
 .floating-head {
     width: 250px;

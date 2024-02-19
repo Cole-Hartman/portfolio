@@ -67,8 +67,8 @@ body {
 
 @media (max-width: 450px) {
     .landing-container {
-        height:55vh;
-        margin-bottom: 45vh;
+        height:50vh;
+        margin-bottom: 50vh;
     }
 }
 

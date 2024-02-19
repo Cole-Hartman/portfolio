@@ -156,12 +156,28 @@ body {
     }
   }
 
+  #pills-tab {
+    text-align: center;
+  }
+
   .skill-languages .col {
     display: flex;
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
     text-align: center; 
+}
+
+.resume-section {
+    width: 55%;
+}
+
+@media (max-width: 576px) {
+    .resume-section {
+        width: 100%;
+        padding: 0;
+    }
+    
 }
 
 

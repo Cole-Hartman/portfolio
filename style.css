@@ -121,7 +121,7 @@ body {
     .floating-head{
         width: 150px ;
     }
-  }
+}
 
 /* Text Animation */
 .typing-text-row {
@@ -134,7 +134,7 @@ body {
     display: flex;
     justify-content: center;
 }
-  
+
 /* About Me */
 .aboutme-title-row h4 {
     text-decoration: underline;
@@ -261,7 +261,7 @@ body {
 
 
 /* Contact */
-  #contact {
+#contact {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -279,7 +279,7 @@ body {
     #row-icon {
         width: 40%;
     }
-  }
+}
 
 @media (max-width: 477px) {
 #row-icon {
